@@ -14,6 +14,8 @@ final class EntryResource extends JsonApiResource
 {
     public array $attributes = [
         'url',
+        'include_utm',
+        'forward_parameters',
         'view_count' => 'views',
     ];
 }
