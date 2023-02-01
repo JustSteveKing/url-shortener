@@ -26,6 +26,14 @@ final class UpdateRequest extends FormRequest
                 ),
                 'max:500',
             ],
+            'include_utm' => [
+                'nullable',
+                'boolean',
+            ],
+            'forward_parameters' => [
+                'nullable',
+                'boolean',
+            ],
         ];
     }
 }

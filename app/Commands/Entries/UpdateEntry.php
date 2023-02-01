@@ -15,7 +15,7 @@ final class UpdateEntry
         return DB::transaction(
             callback: static fn (): bool => (bool) Entry::query()
                 ->where('hash', $identifer)
-                ->update(['url' =>  $entry->url]),
+                ->update($entry->toArray()),
         );
     }
 }
